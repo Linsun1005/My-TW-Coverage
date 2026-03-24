@@ -32,6 +32,7 @@ METRICS_KEYS = {
     "revenue": ["Total Revenue"],
     "gross_profit": ["Gross Profit"],
     "selling_exp": ["Selling And Marketing Expense"],
+    "rd_exp": ["Research And Development"],
     "admin_exp": ["General And Administrative Expense"],
     "operating_income": ["Operating Income"],
     "net_income": ["Net Income", "Net Income Common Stockholders"],
@@ -85,6 +86,7 @@ def extract_metrics(income_stmt, cashflow):
             get_series(income_stmt, METRICS_KEYS["revenue"]),
         ),
         "Selling & Marketing Exp": get_series(income_stmt, METRICS_KEYS["selling_exp"]),
+        "R&D Exp": get_series(income_stmt, METRICS_KEYS["rd_exp"]),
         "General & Admin Exp": calc_admin_exp(income_stmt),
         "Operating Income": get_series(income_stmt, METRICS_KEYS["operating_income"]),
         "Operating Margin (%)": calc_margin(
