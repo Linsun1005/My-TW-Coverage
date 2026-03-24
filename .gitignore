@@ -1,7 +1,6 @@
 __pycache__/
 *.pyc
-.gemini/
 .DS_Store
-temp_*
 *.tmp
 _temp_fix_*.py
+.claude/settings.local.json
