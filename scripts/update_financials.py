@@ -85,7 +85,13 @@ def extract_metrics(income_stmt, cashflow):
         "Financing Cash Flow": get_series(cashflow, METRICS_KEYS["fcf"]),
         "CAPEX": get_series(cashflow, METRICS_KEYS["capex"]),
     }
-    return pd.DataFrame(data).T
+    df = pd.DataFrame(data).T
+    # Clean column headers: remove time component from datetime
+    df.columns = [
+        col.strftime("%Y-%m-%d") if hasattr(col, "strftime") else str(col)
+        for col in df.columns
+    ]
+    return df
 
 
 def fetch_financials(ticker):
@@ -99,7 +105,11 @@ def fetch_financials(ticker):
 
             df_annual = extract_metrics(stock.income_stmt, stock.cashflow)
             if not df_annual.empty:
-                df_annual = df_annual.dropna(axis=1, how="all")
+                if "Revenue" in df_annual.index:
+                    valid_cols = df_annual.columns[df_annual.loc["Revenue"].notna()]
+                    df_annual = df_annual[valid_cols]
+                else:
+                    df_annual = df_annual.dropna(axis=1, how="all")
                 non_pct = [r for r in df_annual.index if "%" not in r]
                 df_annual.loc[non_pct] = df_annual.loc[non_pct] / 1_000_000
                 df_annual = df_annual.iloc[:, :3]
@@ -108,8 +118,12 @@ def fetch_financials(ticker):
                 stock.quarterly_income_stmt, stock.quarterly_cashflow
             )
             if not df_quarterly.empty:
-                # Drop columns where all values are NaN (unreported quarters)
-                df_quarterly = df_quarterly.dropna(axis=1, how="all")
+                # Drop quarters where Revenue is NaN (unreported)
+                if "Revenue" in df_quarterly.index:
+                    valid_cols = df_quarterly.columns[df_quarterly.loc["Revenue"].notna()]
+                    df_quarterly = df_quarterly[valid_cols]
+                else:
+                    df_quarterly = df_quarterly.dropna(axis=1, how="all")
                 non_pct = [r for r in df_quarterly.index if "%" not in r]
                 df_quarterly.loc[non_pct] = df_quarterly.loc[non_pct] / 1_000_000
                 df_quarterly = df_quarterly.iloc[:, :4]
@@ -140,18 +154,30 @@ def fetch_financials(ticker):
     return None
 
 
+def df_to_clean_markdown(df):
+    """Format DataFrame to markdown with .2f precision, then replace NaN with -."""
+    # Format numbers first while dtype is still float
+    md = df.to_markdown(floatfmt=".2f")
+    # Replace nan strings that to_markdown generates for NaN values
+    md = md.replace(" nan ", " - ")
+    md = md.replace(" nan|", " -|")
+    md = md.replace("|nan ", "|- ")
+    # Also handle edge cases with padding
+    import re
+    md = re.sub(r'\bnan\b', '-', md)
+    return md
+
+
 def build_financial_section(data):
     section = "## 財務概況 (單位: 百萬台幣, 只有 Margin 為 %)\n"
     section += "### 年度關鍵財務數據 (近 3 年)\n"
     if data["annual"] is not None and not data["annual"].empty:
-        df = data["annual"].fillna("-")
-        section += df.to_markdown(floatfmt=".2f") + "\n\n"
+        section += df_to_clean_markdown(data["annual"]) + "\n\n"
     else:
         section += "無可用數據。\n\n"
     section += "### 季度關鍵財務數據 (近 4 季)\n"
     if data["quarterly"] is not None and not data["quarterly"].empty:
-        df = data["quarterly"].fillna("-")
-        section += df.to_markdown(floatfmt=".2f") + "\n"
+        section += df_to_clean_markdown(data["quarterly"]) + "\n"
     else:
         section += "無可用數據。\n"
     return section
