@@ -131,6 +131,18 @@ python scripts/build_wikilink_index.py
 
 Regenerates [WIKILINKS.md](WIKILINKS.md) — a browsable index of all 4,900+ wikilinks categorized by type (Technologies, Materials, Applications, Companies). Run after any enrichment update.
 
+### Generate Wikilink Network Graph
+
+Interactive D3.js force-directed graph showing wikilink co-occurrences across all tickers. Hover to highlight neighbors, search by name, adjust edge weight threshold.
+
+```bash
+python scripts/build_network.py                    # Default: min 5 co-occurrences
+python scripts/build_network.py --min-weight 10    # Fewer edges, cleaner view
+python scripts/build_network.py --top 200          # Only top 200 nodes
+```
+
+Open `network/index.html` in your browser. Node colors: red = Taiwan company, blue = international, green = technology, orange = material, purple = application.
+
 ### Generate Thematic Investment Screens
 
 ```bash
@@ -196,11 +208,15 @@ The database contains **4,900+ unique wikilinks** across three categories:
 │   ├── update_valuation.py     # Refresh valuation multiples only (fast)
 │   ├── build_wikilink_index.py # Rebuild WIKILINKS.md index
 │   ├── build_themes.py        # Generate thematic investment screens
+│   ├── build_network.py       # Generate interactive network graph
 │   └── generators/            # Historical base report generators
 ├── Pilot_Reports/             # 1,735 ticker reports across 99 sectors
 │   ├── Semiconductors/
 │   ├── Electronic Components/
 │   └── ... (99 folders)
+├── network/                   # Interactive wikilink network graph (auto-generated)
+│   ├── index.html             # D3.js visualization (open in browser)
+│   └── graph_data.json        # Raw graph data (339 nodes, 1,452 edges)
 ├── themes/                    # Thematic investment screens (auto-generated)
 │   ├── README.md              # Theme index
 │   ├── CoWoS.md               # 39 companies in CoWoS supply chain
