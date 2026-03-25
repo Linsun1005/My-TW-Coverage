@@ -131,6 +131,20 @@ python scripts/build_wikilink_index.py
 
 Regenerates [WIKILINKS.md](WIKILINKS.md) — a browsable index of all 4,900+ wikilinks categorized by type (Technologies, Materials, Applications, Companies). Run after any enrichment update.
 
+### Discover Companies by Buzzword
+
+Hear a buzzword on the news? Find every related Taiwan-listed company instantly.
+
+```bash
+python scripts/discover.py "液冷散熱"                    # Search all sectors
+python scripts/discover.py "液冷散熱" --smart            # Auto-detect relevant sectors
+python scripts/discover.py "液冷散熱" --apply            # Tag [[wikilinks]] in reports
+python scripts/discover.py "液冷散熱" --apply --rebuild  # Also rebuild themes + network
+python scripts/discover.py "液冷散熱" --sector Semiconductors  # Limit to specific sector
+```
+
+Results show companies grouped by relationship type (core business, supply chain, customer/supplier) with context snippets. Use `--smart` to auto-filter irrelevant sectors (tech buzzwords skip banks/insurance/real estate).
+
 ### Generate Wikilink Network Graph
 
 Interactive D3.js force-directed graph showing wikilink co-occurrences across all tickers. Hover to highlight neighbors, search by name, adjust edge weight threshold.
@@ -205,6 +219,7 @@ The database contains **4,900+ unique wikilinks** across three categories:
 │   ├── update_enrichment.py   # Update business descriptions from JSON
 │   ├── audit_batch.py         # Quality auditing
 │   ├── update_valuation.py     # Refresh valuation multiples only (fast)
+│   ├── discover.py            # Reverse search: buzzword → related companies
 │   ├── build_wikilink_index.py # Rebuild WIKILINKS.md index
 │   ├── build_themes.py        # Generate thematic investment screens
 │   ├── build_network.py       # Generate interactive network graph
