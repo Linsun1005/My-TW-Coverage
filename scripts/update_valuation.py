@@ -18,12 +18,14 @@ import os
 import re
 import sys
 import time
-from datetime import date, datetime
 
 import yfinance as yf
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from utils import find_ticker_files, parse_scope_args
+from utils import (
+    find_ticker_files, parse_scope_args, setup_stdout,
+    fetch_valuation_data, build_valuation_table, update_metadata,
+)
 
 
 def fetch_valuation(ticker):
@@ -35,31 +37,8 @@ def fetch_valuation(ticker):
             if not info or not info.get("currentPrice"):
                 continue
 
-            valuation = {}
-            for key, label in [
-                ("trailingPE", "P/E (TTM)"),
-                ("forwardPE", "Forward P/E"),
-                ("priceToSalesTrailing12Months", "P/S (TTM)"),
-                ("priceToBook", "P/B"),
-                ("enterpriseToEbitda", "EV/EBITDA"),
-            ]:
-                val = info.get(key)
-                valuation[label] = f"{val:.2f}" if val else "N/A"
+            valuation = fetch_valuation_data(info)
 
-            # Price and period info
-            cur_price = info.get("currentPrice")
-            valuation["_price"] = f"{cur_price:,.2f}" if cur_price else None
-
-            mrq = info.get("mostRecentQuarter")
-            nfy = info.get("nextFiscalYearEnd")
-            valuation["_ttm_end"] = (
-                datetime.fromtimestamp(mrq).strftime("%Y-%m-%d") if mrq else None
-            )
-            valuation["_fwd_end"] = (
-                datetime.fromtimestamp(nfy).strftime("%Y-%m-%d") if nfy else None
-            )
-
-            # Also update market cap and enterprise value
             market_cap = (
                 f"{info['marketCap'] / 1_000_000:,.0f}"
                 if info.get("marketCap")
@@ -82,34 +61,6 @@ def fetch_valuation(ticker):
     return None
 
 
-def build_valuation_table(v):
-    """Build the 估值指標 markdown section."""
-    headers = ["P/E (TTM)", "Forward P/E", "P/S (TTM)", "P/B", "EV/EBITDA"]
-    values = [v.get(h, "N/A") for h in headers]
-    widths = [max(len(h), len(val)) for h, val in zip(headers, values)]
-    header_row = "| " + " | ".join(h.rjust(w) for h, w in zip(headers, widths)) + " |"
-    sep_row = "|" + "|".join("-" * (w + 2) for w in widths) + "|"
-    val_row = "| " + " | ".join(val.rjust(w) for val, w in zip(values, widths)) + " |"
-
-    # Period and price annotation
-    today = date.today().strftime("%Y-%m-%d")
-    ttm_end = v.get("_ttm_end")
-    fwd_end = v.get("_fwd_end")
-    price = v.get("_price")
-
-    period_parts = []
-    if price:
-        period_parts.append(f"股價 ${price} as of {today}")
-    if ttm_end:
-        period_parts.append(f"TTM 截至 {ttm_end}")
-    if fwd_end:
-        period_parts.append(f"Forward 預估至 {fwd_end}")
-    period_note = " | ".join(period_parts) if period_parts else ""
-
-    title = f"### 估值指標 ({period_note})\n" if period_note else "### 估值指標\n"
-    return title + header_row + "\n" + sep_row + "\n" + val_row
-
-
 def update_file(filepath, ticker, dry_run=False):
     """Update only the valuation section in a ticker file."""
     with open(filepath, "r", encoding="utf-8") as f:
@@ -120,8 +71,7 @@ def update_file(filepath, ticker, dry_run=False):
         print(f"  {ticker}: SKIP (no data)")
         return False
 
-    v = data["valuation"]
-    new_table = build_valuation_table(v)
+    new_table = build_valuation_table(data["valuation"])
 
     # Replace existing 估值指標 section (between ### 估值指標 and ### 年度)
     if "### 估值指標" in content:
@@ -138,19 +88,7 @@ def update_file(filepath, ticker, dry_run=False):
             new_table + "\n\n### 年度關鍵財務數據",
         )
 
-    # Update market cap and enterprise value metadata
-    if data.get("market_cap"):
-        content = re.sub(
-            r"(\*\*市值:\*\*) .+?百萬台幣",
-            rf"\1 {data['market_cap']} 百萬台幣",
-            content,
-        )
-    if data.get("enterprise_value"):
-        content = re.sub(
-            r"(\*\*企業價值:\*\*) .+?百萬台幣",
-            rf"\1 {data['enterprise_value']} 百萬台幣",
-            content,
-        )
+    content = update_metadata(content, data.get("market_cap"), data.get("enterprise_value"))
 
     if dry_run:
         print(f"  {ticker}: WOULD UPDATE ({data['suffix']})")
@@ -163,10 +101,9 @@ def update_file(filepath, ticker, dry_run=False):
 
 
 def main():
-    if sys.platform == "win32":
-        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    setup_stdout()
 
-    args = [a for a in sys.argv[1:]]
+    args = list(sys.argv[1:])
     dry_run = "--dry-run" in args
     if dry_run:
         args.remove("--dry-run")
@@ -191,7 +128,7 @@ def main():
         except Exception as e:
             print(f"  {ticker}: ERROR ({e})")
             failed += 1
-        time.sleep(0.3)  # Lighter rate limit than full financials
+        time.sleep(0.3)
 
     print(f"\nDone. Updated: {updated} | Skipped: {skipped} | Failed: {failed}")
 

@@ -204,7 +204,6 @@ The database contains **4,900+ unique wikilinks** across three categories:
 │   ├── update_financials.py   # Refresh financial tables + valuation multiples
 │   ├── update_enrichment.py   # Update business descriptions from JSON
 │   ├── audit_batch.py         # Quality auditing
-│   ├── fix_batch.py           # Batch enrichment applicator
 │   ├── update_valuation.py     # Refresh valuation multiples only (fast)
 │   ├── build_wikilink_index.py # Rebuild WIKILINKS.md index
 │   ├── build_themes.py        # Generate thematic investment screens

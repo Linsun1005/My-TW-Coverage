@@ -1,17 +1,24 @@
 """
 utils.py — Shared utilities for all scripts.
 
-Provides: file discovery, batch parsing, scope argument parsing, section replacement.
+Provides: file discovery, batch parsing, scope parsing, wikilink normalization,
+category classification, valuation table rendering, metadata updates.
 """
 
 import os
 import re
+import sys
 import glob
+from datetime import date, datetime
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REPORTS_DIR = os.path.join(PROJECT_ROOT, "Pilot_Reports")
 TASK_FILE = os.path.join(PROJECT_ROOT, "task.md")
 
+
+# =============================================================================
+# File Discovery
+# =============================================================================
 
 def find_ticker_files(tickers=None, sector=None):
     """Find report files matching given tickers or sector.
@@ -36,12 +43,30 @@ def find_ticker_files(tickers=None, sector=None):
     return files
 
 
+def get_ticker_from_filename(filepath):
+    """Extract ticker number and company name from a report filename."""
+    fn = os.path.basename(filepath)
+    m = re.match(r"^(\d{4})_(.+)\.md$", fn)
+    if m:
+        return m.group(1), m.group(2)
+    return None, None
+
+
+# =============================================================================
+# Batch & Scope Parsing
+# =============================================================================
+
 def get_batch_tickers(batch_num):
     """Get ticker list for a batch from task.md."""
-    with open(TASK_FILE, "r", encoding="utf-8") as f:
-        content = f.read()
+    try:
+        with open(TASK_FILE, "r", encoding="utf-8") as f:
+            content = f.read()
+    except Exception as e:
+        print(f"Error reading task.md: {e}")
+        return []
+
     pattern = re.compile(
-        r"Batch\s+" + str(batch_num) + r"\*\*.*?:\s*(.*)$",
+        r"Batch\s+" + str(batch_num) + r"\*\*.*?:[:\s]*(.*)$",
         re.IGNORECASE | re.MULTILINE,
     )
     match = pattern.search(content)
@@ -52,6 +77,7 @@ def get_batch_tickers(batch_num):
             for t in raw.split(",")
             if re.search(r"\d{4}", t)
         ]
+    print(f"Error: Batch {batch_num} not found in task.md")
     return []
 
 
@@ -62,10 +88,16 @@ def parse_scope_args(args):
     if not args:
         return None, None, "ALL tickers"
     elif args[0] == "--batch":
+        if len(args) < 2:
+            print("Error: --batch requires a batch number")
+            sys.exit(1)
         batch_num = args[1]
         tickers = get_batch_tickers(batch_num)
         return tickers, None, f"{len(tickers)} tickers in Batch {batch_num}"
     elif args[0] == "--sector":
+        if len(args) < 2:
+            print("Error: --sector requires a sector name")
+            sys.exit(1)
         sector = " ".join(args[1:])
         return None, sector, f"all tickers in sector: {sector}"
     else:
@@ -73,16 +105,16 @@ def parse_scope_args(args):
         return tickers, None, f"{len(tickers)} tickers: {', '.join(tickers)}"
 
 
-def get_ticker_from_filename(filepath):
-    """Extract ticker number from a report filename."""
-    fn = os.path.basename(filepath)
-    m = re.match(r"^(\d{4})_(.+)\.md$", fn)
-    if m:
-        return m.group(1), m.group(2)
-    return None, None
+def setup_stdout():
+    """Configure stdout for UTF-8 on Windows."""
+    if sys.platform == "win32":
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 
-# --- Wikilink Normalization ---
+# =============================================================================
+# Wikilink Normalization
+# =============================================================================
+
 # Canonical name mapping: alias -> canonical
 # Taiwan companies use Chinese, foreign companies use English
 WIKILINK_ALIASES = {
@@ -132,7 +164,6 @@ def normalize_wikilinks(content):
     Also collapses duplicate parentheticals like [[X]] ([[X]]).
     Only operates on text before 財務概況 to protect financial tables.
     """
-    # Split at 財務概況 to protect financial tables
     parts = content.split("## 財務概況")
     if len(parts) < 2:
         return content
@@ -152,6 +183,147 @@ def normalize_wikilinks(content):
 
     return text + "## 財務概況" + parts[1]
 
+
+# =============================================================================
+# Category Classification (shared by build_wikilink_index, build_themes, build_network)
+# =============================================================================
+
+TECH_TERMS = {
+    "AI", "PCB", "5G", "HBM", "CoWoS", "InFO", "EUV", "CPO", "FOPLP",
+    "VCSEL", "EML", "MLCC", "MOSFET", "IGBT", "DRAM", "NAND", "SSD",
+    "DDR5", "DDR4", "PCIe", "USB", "WiFi", "Bluetooth", "OLED", "AMOLED",
+    "Mini LED", "Micro LED", "MCU", "SoC", "ASIC", "FPGA", "RF", "IC",
+    "LED", "LCD", "TFT", "CMP", "CVD", "PVD", "ALD", "AOI", "SMT",
+    "BGA", "QFN", "SOP", "ABF 載板", "BT 載板", "ABF", "SerDes", "PMIC",
+    "LDO", "NOR Flash", "NAND Flash", "矽光子", "光收發模組",
+}
+
+MATERIAL_TERMS = {
+    "碳化矽", "氮化鎵", "磷化銦", "砷化鎵", "矽晶圓", "銅箔", "玻纖布",
+    "光阻液", "研磨液", "超純水", "氦氣", "氖氣", "鈦酸鋇", "聚醯亞胺",
+    "導線架", "探針卡", "BT 樹脂", "銀漿", "銅漿", "氧化鋁",
+}
+
+APPLICATION_TERMS = {
+    "AI 伺服器", "電動車", "物聯網", "資料中心", "低軌衛星", "5G",
+    "智慧家庭", "車用電子", "消費電子", "綠能", "太陽能", "風電",
+    "儲能系統", "離岸風電", "自動駕駛", "智慧城市", "行車記錄器", "無人機",
+}
+
+CATEGORY_COLORS = {
+    "taiwan_company": "#e74c3c",
+    "international_company": "#3498db",
+    "technology": "#2ecc71",
+    "material": "#f39c12",
+    "application": "#9b59b6",
+}
+
+CATEGORY_LABELS = {
+    "taiwan_company": "台灣公司",
+    "international_company": "國際公司",
+    "technology": "技術/標準",
+    "material": "材料/基板",
+    "application": "終端應用",
+}
+
+
+def is_cjk(s):
+    """Check if a string is primarily CJK characters."""
+    return sum(1 for c in s if "\u4e00" <= c <= "\u9fff") > len(s) * 0.3
+
+
+def classify_wikilink(name):
+    """Classify a wikilink into a category."""
+    if name in TECH_TERMS:
+        return "technology"
+    if name in MATERIAL_TERMS:
+        return "material"
+    if name in APPLICATION_TERMS:
+        return "application"
+    if is_cjk(name):
+        return "taiwan_company"
+    return "international_company"
+
+
+# =============================================================================
+# Valuation Table Rendering (shared by update_financials and update_valuation)
+# =============================================================================
+
+def fetch_valuation_data(info):
+    """Extract valuation multiples from yfinance info dict.
+    Returns dict with display values and metadata.
+    """
+    valuation = {}
+    for key, label in [
+        ("trailingPE", "P/E (TTM)"),
+        ("forwardPE", "Forward P/E"),
+        ("priceToSalesTrailing12Months", "P/S (TTM)"),
+        ("priceToBook", "P/B"),
+        ("enterpriseToEbitda", "EV/EBITDA"),
+    ]:
+        val = info.get(key)
+        valuation[label] = f"{val:.2f}" if val else "N/A"
+
+    # Price
+    cur_price = info.get("currentPrice")
+    valuation["_price"] = f"{cur_price:,.2f}" if cur_price else None
+
+    # Period info
+    mrq = info.get("mostRecentQuarter")
+    nfy = info.get("nextFiscalYearEnd")
+    valuation["_ttm_end"] = (
+        datetime.fromtimestamp(mrq).strftime("%Y-%m-%d") if mrq else None
+    )
+    valuation["_fwd_end"] = (
+        datetime.fromtimestamp(nfy).strftime("%Y-%m-%d") if nfy else None
+    )
+
+    return valuation
+
+
+def build_valuation_table(v):
+    """Build the 估值指標 markdown section from valuation dict."""
+    headers = ["P/E (TTM)", "Forward P/E", "P/S (TTM)", "P/B", "EV/EBITDA"]
+    values = [v.get(h, "N/A") for h in headers]
+    widths = [max(len(h), len(val)) for h, val in zip(headers, values)]
+    header_row = "| " + " | ".join(h.rjust(w) for h, w in zip(headers, widths)) + " |"
+    sep_row = "|" + "|".join("-" * (w + 2) for w in widths) + "|"
+    val_row = "| " + " | ".join(val.rjust(w) for val, w in zip(values, widths)) + " |"
+
+    today = date.today().strftime("%Y-%m-%d")
+    period_parts = []
+    if v.get("_price"):
+        period_parts.append(f"股價 ${v['_price']} as of {today}")
+    if v.get("_ttm_end"):
+        period_parts.append(f"TTM 截至 {v['_ttm_end']}")
+    if v.get("_fwd_end"):
+        period_parts.append(f"Forward 預估至 {v['_fwd_end']}")
+    period_note = " | ".join(period_parts) if period_parts else ""
+
+    title = f"### 估值指標 ({period_note})\n" if period_note else "### 估值指標\n"
+    return title + header_row + "\n" + sep_row + "\n" + val_row
+
+
+def update_metadata(content, market_cap, enterprise_value):
+    """Update 市值 and 企業價值 metadata in file content."""
+    if market_cap:
+        content = re.sub(
+            r"(\*\*市值:\*\*) .+?百萬台幣",
+            rf"\1 {market_cap} 百萬台幣",
+            content,
+        )
+    if enterprise_value:
+        content = re.sub(
+            r"(\*\*企業價值:\*\*) .+?百萬台幣",
+            rf"\1 {enterprise_value} 百萬台幣",
+            content,
+        )
+    return content
+
+
+# =============================================================================
+# Section Replacement
+# =============================================================================
 
 def replace_section(content, section_header, new_body, next_section_header=None):
     """Replace content between section_header and next_section_header.

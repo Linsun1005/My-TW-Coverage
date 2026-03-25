@@ -17,65 +17,14 @@ import re
 import sys
 from collections import defaultdict
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from utils import (
+    REPORTS_DIR, setup_stdout,
+    classify_wikilink, CATEGORY_COLORS, CATEGORY_LABELS,
+)
+
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-REPORTS_DIR = os.path.join(PROJECT_ROOT, "Pilot_Reports")
 NETWORK_DIR = os.path.join(PROJECT_ROOT, "network")
-
-# Category classification
-TECH_TERMS = {
-    "AI", "PCB", "5G", "HBM", "CoWoS", "InFO", "EUV", "CPO", "FOPLP",
-    "VCSEL", "EML", "MLCC", "MOSFET", "IGBT", "DRAM", "NAND", "SSD",
-    "DDR5", "DDR4", "PCIe", "USB", "WiFi", "OLED", "AMOLED",
-    "Mini LED", "Micro LED", "MCU", "SoC", "ASIC", "FPGA", "LED", "LCD",
-    "CMP", "CVD", "PVD", "ALD", "AOI", "SMT", "BGA", "QFN",
-    "ABF 載板", "BT 載板", "ABF", "SerDes", "PMIC", "LDO",
-    "NOR Flash", "NAND Flash", "RF", "IC",
-}
-
-MATERIAL_TERMS = {
-    "碳化矽", "氮化鎵", "磷化銦", "砷化鎵", "矽晶圓", "銅箔", "玻纖布",
-    "光阻液", "研磨液", "超純水", "氦氣", "氖氣", "鈦酸鋇", "聚醯亞胺",
-    "導線架", "探針卡", "BT 樹脂", "銀漿", "銅漿", "氧化鋁",
-}
-
-APPLICATION_TERMS = {
-    "AI 伺服器", "電動車", "物聯網", "資料中心", "低軌衛星",
-    "智慧家庭", "車用電子", "消費電子", "綠能", "太陽能", "風電",
-    "儲能系統", "離岸風電", "自動駕駛", "無人機",
-}
-
-
-def is_cjk(s):
-    return sum(1 for c in s if "\u4e00" <= c <= "\u9fff") > len(s) * 0.3
-
-
-def classify_node(name):
-    if name in TECH_TERMS:
-        return "technology"
-    if name in MATERIAL_TERMS:
-        return "material"
-    if name in APPLICATION_TERMS:
-        return "application"
-    if is_cjk(name):
-        return "taiwan_company"
-    return "international_company"
-
-
-CATEGORY_COLORS = {
-    "taiwan_company": "#e74c3c",
-    "international_company": "#3498db",
-    "technology": "#2ecc71",
-    "material": "#f39c12",
-    "application": "#9b59b6",
-}
-
-CATEGORY_LABELS = {
-    "taiwan_company": "台灣公司",
-    "international_company": "國際公司",
-    "technology": "技術/標準",
-    "material": "材料/基板",
-    "application": "終端應用",
-}
 
 
 def scan_graph(min_weight=5, top_n=None):
@@ -126,7 +75,7 @@ def scan_graph(min_weight=5, top_n=None):
 
     nodes = []
     for name in active_nodes:
-        cat = classify_node(name)
+        cat = classify_wikilink(name)
         nodes.append({
             "id": name,
             "count": node_counts[name],
@@ -300,8 +249,7 @@ render(5);
 
 
 def main():
-    if sys.platform == "win32":
-        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    setup_stdout()
 
     args = sys.argv[1:]
     min_weight = 5
