@@ -177,6 +177,7 @@ This project includes [Claude Code](https://claude.ai/claude-code) skill definit
 | `/update-financials 2330` | Refresh financial tables from yfinance |
 | `/update-valuation 2330` | Refresh valuation multiples only (fast) |
 | `/update-enrichment 2330` | Re-research and update business content |
+| `/discover 液冷散熱` | Reverse search: buzzword → companies + web research fallback |
 
 All commands support scope: single ticker, multiple tickers, `--batch N`, `--sector Name`, or all.
 

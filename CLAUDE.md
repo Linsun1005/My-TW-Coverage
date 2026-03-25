@@ -172,6 +172,7 @@ Pilot_Reports/{Industry}/{Ticker}_{ChineseName}.md
 | `/update-financials 2330` | Refresh 財務概況 from yfinance (preserves enrichment) |
 | `/update-valuation 2330` | Refresh 估值指標 only — fast, no financial tables |
 | `/update-enrichment 2330` | Re-research & update 業務簡介/供應鏈/客戶 (preserves financials) |
+| `/discover 液冷散熱` | Reverse search: buzzword → related companies + web research fallback |
 
 ### Research Queries (per ticker)
 - `[Ticker] 法說會` — investor conference transcripts
