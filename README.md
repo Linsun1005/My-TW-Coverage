@@ -81,6 +81,17 @@ python scripts/update_financials.py --sector Semiconductors     # By sector
 python scripts/update_financials.py                             # ALL tickers
 ```
 
+### Update Valuation Only (Fast)
+
+Refreshes only the 估值指標 table (P/E, Forward P/E, P/S, P/B, EV/EBITDA, stock price) without re-fetching full financial statements. ~3x faster than `update_financials`.
+
+```bash
+python scripts/update_valuation.py 2330                         # Single ticker
+python scripts/update_valuation.py --batch 101                  # By batch
+python scripts/update_valuation.py --sector Semiconductors      # By sector
+python scripts/update_valuation.py                              # ALL tickers
+```
+
 ### Update Enrichment Content
 
 Prepare a JSON file with enrichment data, then apply:
@@ -138,6 +149,7 @@ This project includes [Claude Code](https://claude.ai/claude-code) skill definit
 |---|---|
 | `/add-ticker 2330 台積電` | Generate report + fetch financials + research & enrich |
 | `/update-financials 2330` | Refresh financial tables from yfinance |
+| `/update-valuation 2330` | Refresh valuation multiples only (fast) |
 | `/update-enrichment 2330` | Re-research and update business content |
 
 All commands support scope: single ticker, multiple tickers, `--batch N`, `--sector Name`, or all.
@@ -181,6 +193,7 @@ The database contains **4,900+ unique wikilinks** across three categories:
 │   ├── update_enrichment.py   # Update business descriptions from JSON
 │   ├── audit_batch.py         # Quality auditing
 │   ├── fix_batch.py           # Batch enrichment applicator
+│   ├── update_valuation.py     # Refresh valuation multiples only (fast)
 │   ├── build_wikilink_index.py # Rebuild WIKILINKS.md index
 │   ├── build_themes.py        # Generate thematic investment screens
 │   └── generators/            # Historical base report generators

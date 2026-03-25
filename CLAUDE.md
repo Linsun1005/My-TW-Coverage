@@ -152,6 +152,7 @@ Pilot_Reports/{Industry}/{Ticker}_{ChineseName}.md
 | Audit | `python scripts/audit_batch.py <batch> -v` | Quality check (single batch) |
 | Audit All | `python scripts/audit_batch.py --all -v` | Quality check (all completed batches) |
 | Wikilink Index | `python scripts/build_wikilink_index.py` | Rebuild WIKILINKS.md from all reports |
+| Update Valuation | `python scripts/update_valuation.py [scope]` | Refresh 估值指標 only (fast, no financials) |
 | Thematic Screens | `python scripts/build_themes.py` | Generate themes/ supply chain maps |
 
 ### Scope Syntax (shared across all scripts)
@@ -168,6 +169,7 @@ Pilot_Reports/{Industry}/{Ticker}_{ChineseName}.md
 |---|---|
 | `/add-ticker 2330 台積電` | Generate .md + fetch financials + research & enrich |
 | `/update-financials 2330` | Refresh 財務概況 from yfinance (preserves enrichment) |
+| `/update-valuation 2330` | Refresh 估值指標 only — fast, no financial tables |
 | `/update-enrichment 2330` | Re-research & update 業務簡介/供應鏈/客戶 (preserves financials) |
 
 ### Research Queries (per ticker)
