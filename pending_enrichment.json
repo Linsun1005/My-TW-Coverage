@@ -1,0 +1,1682 @@
+[
+  {
+    "ticker": "1201",
+    "name": "味全",
+    "path": "Pilot_Reports\\Consumer Defensive\\1201_味全.md"
+  },
+  {
+    "ticker": "1203",
+    "name": "味王",
+    "path": "Pilot_Reports\\Consumer Defensive\\1203_味王.md"
+  },
+  {
+    "ticker": "1210",
+    "name": "大成",
+    "path": "Pilot_Reports\\Consumer Defensive\\1210_大成.md"
+  },
+  {
+    "ticker": "1213",
+    "name": "大飲",
+    "path": "Pilot_Reports\\Consumer Defensive\\1213_大飲.md"
+  },
+  {
+    "ticker": "1215",
+    "name": "卜蜂",
+    "path": "Pilot_Reports\\Consumer Defensive\\1215_卜蜂.md"
+  },
+  {
+    "ticker": "1216",
+    "name": "統一",
+    "path": "Pilot_Reports\\Consumer Defensive\\1216_統一.md"
+  },
+  {
+    "ticker": "1217",
+    "name": "愛之味",
+    "path": "Pilot_Reports\\Consumer Defensive\\1217_愛之味.md"
+  },
+  {
+    "ticker": "1218",
+    "name": "泰山",
+    "path": "Pilot_Reports\\Consumer Defensive\\1218_泰山.md"
+  },
+  {
+    "ticker": "1219",
+    "name": "福壽",
+    "path": "Pilot_Reports\\Consumer Defensive\\1219_福壽.md"
+  },
+  {
+    "ticker": "1220",
+    "name": "台榮",
+    "path": "Pilot_Reports\\Consumer Defensive\\1220_台榮.md"
+  },
+  {
+    "ticker": "1225",
+    "name": "福懋油",
+    "path": "Pilot_Reports\\Consumer Defensive\\1225_福懋油.md"
+  },
+  {
+    "ticker": "1227",
+    "name": "佳格",
+    "path": "Pilot_Reports\\Consumer Defensive\\1227_佳格.md"
+  },
+  {
+    "ticker": "1229",
+    "name": "聯華",
+    "path": "Pilot_Reports\\Industrials\\1229_聯華.md"
+  },
+  {
+    "ticker": "1231",
+    "name": "聯華食",
+    "path": "Pilot_Reports\\Consumer Defensive\\1231_聯華食.md"
+  },
+  {
+    "ticker": "1232",
+    "name": "大統益",
+    "path": "Pilot_Reports\\Consumer Defensive\\1232_大統益.md"
+  },
+  {
+    "ticker": "1233",
+    "name": "天仁",
+    "path": "Pilot_Reports\\Consumer Defensive\\1233_天仁.md"
+  },
+  {
+    "ticker": "1234",
+    "name": "黑松",
+    "path": "Pilot_Reports\\Consumer Defensive\\1234_黑松.md"
+  },
+  {
+    "ticker": "1235",
+    "name": "興泰",
+    "path": "Pilot_Reports\\Consumer Defensive\\1235_興泰.md"
+  },
+  {
+    "ticker": "1236",
+    "name": "宏亞",
+    "path": "Pilot_Reports\\Consumer Defensive\\1236_宏亞.md"
+  },
+  {
+    "ticker": "1256",
+    "name": "鮮活果汁-KY",
+    "path": "Pilot_Reports\\Consumer Defensive\\1256_鮮活果汁-KY.md"
+  },
+  {
+    "ticker": "1259",
+    "name": "安心",
+    "path": "Pilot_Reports\\Consumer Cyclical\\1259_安心.md"
+  },
+  {
+    "ticker": "1264",
+    "name": "德麥",
+    "path": "Pilot_Reports\\Consumer Defensive\\1264_德麥.md"
+  },
+  {
+    "ticker": "1268",
+    "name": "漢來美食",
+    "path": "Pilot_Reports\\Consumer Cyclical\\1268_漢來美食.md"
+  },
+  {
+    "ticker": "1294",
+    "name": "漢田生技",
+    "path": "Pilot_Reports\\Consumer Defensive\\1294_漢田生技.md"
+  },
+  {
+    "ticker": "1295",
+    "name": "生合",
+    "path": "Pilot_Reports\\Healthcare\\1295_生合.md"
+  },
+  {
+    "ticker": "1565",
+    "name": "精華",
+    "path": "Pilot_Reports\\Healthcare\\1565_精華.md"
+  },
+  {
+    "ticker": "1702",
+    "name": "南僑",
+    "path": "Pilot_Reports\\Consumer Defensive\\1702_南僑.md"
+  },
+  {
+    "ticker": "1707",
+    "name": "葡萄王",
+    "path": "Pilot_Reports\\Healthcare\\1707_葡萄王.md"
+  },
+  {
+    "ticker": "1720",
+    "name": "生達",
+    "path": "Pilot_Reports\\Healthcare\\1720_生達.md"
+  },
+  {
+    "ticker": "1731",
+    "name": "美吾華",
+    "path": "Pilot_Reports\\Healthcare\\1731_美吾華.md"
+  },
+  {
+    "ticker": "1733",
+    "name": "五鼎",
+    "path": "Pilot_Reports\\Healthcare\\1733_五鼎.md"
+  },
+  {
+    "ticker": "1734",
+    "name": "杏輝",
+    "path": "Pilot_Reports\\Healthcare\\1734_杏輝.md"
+  },
+  {
+    "ticker": "1737",
+    "name": "臺鹽",
+    "path": "Pilot_Reports\\Consumer Defensive\\1737_臺鹽.md"
+  },
+  {
+    "ticker": "1752",
+    "name": "南光",
+    "path": "Pilot_Reports\\Healthcare\\1752_南光.md"
+  },
+  {
+    "ticker": "1760",
+    "name": "寶齡富錦",
+    "path": "Pilot_Reports\\Healthcare\\1760_寶齡富錦.md"
+  },
+  {
+    "ticker": "1762",
+    "name": "中化生",
+    "path": "Pilot_Reports\\Healthcare\\1762_中化生.md"
+  },
+  {
+    "ticker": "1777",
+    "name": "生泰",
+    "path": "Pilot_Reports\\Healthcare\\1777_生泰.md"
+  },
+  {
+    "ticker": "1781",
+    "name": "合世",
+    "path": "Pilot_Reports\\Healthcare\\1781_合世.md"
+  },
+  {
+    "ticker": "1783",
+    "name": "和康生",
+    "path": "Pilot_Reports\\Healthcare\\1783_和康生.md"
+  },
+  {
+    "ticker": "1784",
+    "name": "訊聯",
+    "path": "Pilot_Reports\\Healthcare\\1784_訊聯.md"
+  },
+  {
+    "ticker": "1786",
+    "name": "科妍",
+    "path": "Pilot_Reports\\Healthcare\\1786_科妍.md"
+  },
+  {
+    "ticker": "1788",
+    "name": "杏昌",
+    "path": "Pilot_Reports\\Healthcare\\1788_杏昌.md"
+  },
+  {
+    "ticker": "1789",
+    "name": "神隆",
+    "path": "Pilot_Reports\\Healthcare\\1789_神隆.md"
+  },
+  {
+    "ticker": "1795",
+    "name": "美時",
+    "path": "Pilot_Reports\\Healthcare\\1795_美時.md"
+  },
+  {
+    "ticker": "1796",
+    "name": "金穎生技",
+    "path": "Pilot_Reports\\Healthcare\\1796_金穎生技.md"
+  },
+  {
+    "ticker": "1799",
+    "name": "易威",
+    "path": "Pilot_Reports\\Healthcare\\1799_易威.md"
+  },
+  {
+    "ticker": "1813",
+    "name": "寶利徠",
+    "path": "Pilot_Reports\\Technology\\1813_寶利徠.md"
+  },
+  {
+    "ticker": "1903",
+    "name": "士紙",
+    "path": "Pilot_Reports\\Consumer Defensive\\1903_士紙.md"
+  },
+  {
+    "ticker": "1904",
+    "name": "正隆",
+    "path": "Pilot_Reports\\Basic Materials\\1904_正隆.md"
+  },
+  {
+    "ticker": "1905",
+    "name": "華紙",
+    "path": "Pilot_Reports\\Basic Materials\\1905_華紙.md"
+  },
+  {
+    "ticker": "1906",
+    "name": "寶隆",
+    "path": "Pilot_Reports\\Basic Materials\\1906_寶隆.md"
+  },
+  {
+    "ticker": "1907",
+    "name": "永豐餘",
+    "path": "Pilot_Reports\\Basic Materials\\1907_永豐餘.md"
+  },
+  {
+    "ticker": "1909",
+    "name": "榮成",
+    "path": "Pilot_Reports\\Basic Materials\\1909_榮成.md"
+  },
+  {
+    "ticker": "2601",
+    "name": "益航",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2601_益航.md"
+  },
+  {
+    "ticker": "2701",
+    "name": "萬企",
+    "path": "Pilot_Reports\\Real Estate\\2701_萬企.md"
+  },
+  {
+    "ticker": "2702",
+    "name": "華園",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2702_華園.md"
+  },
+  {
+    "ticker": "2704",
+    "name": "國賓",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2704_國賓.md"
+  },
+  {
+    "ticker": "2705",
+    "name": "六福",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2705_六福.md"
+  },
+  {
+    "ticker": "2706",
+    "name": "第一店",
+    "path": "Pilot_Reports\\Real Estate\\2706_第一店.md"
+  },
+  {
+    "ticker": "2707",
+    "name": "晶華",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2707_晶華.md"
+  },
+  {
+    "ticker": "2712",
+    "name": "遠雄來",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2712_遠雄來.md"
+  },
+  {
+    "ticker": "2719",
+    "name": "燦星旅",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2719_燦星旅.md"
+  },
+  {
+    "ticker": "2722",
+    "name": "夏都",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2722_夏都.md"
+  },
+  {
+    "ticker": "2723",
+    "name": "美食-KY",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2723_美食-KY.md"
+  },
+  {
+    "ticker": "2726",
+    "name": "雅茗-KY",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2726_雅茗-KY.md"
+  },
+  {
+    "ticker": "2727",
+    "name": "王品",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2727_王品.md"
+  },
+  {
+    "ticker": "2729",
+    "name": "瓦城",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2729_瓦城.md"
+  },
+  {
+    "ticker": "2731",
+    "name": "雄獅",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2731_雄獅.md"
+  },
+  {
+    "ticker": "2732",
+    "name": "六角",
+    "path": "Pilot_Reports\\Consumer Defensive\\2732_六角.md"
+  },
+  {
+    "ticker": "2734",
+    "name": "易飛網",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2734_易飛網.md"
+  },
+  {
+    "ticker": "2736",
+    "name": "富野",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2736_富野.md"
+  },
+  {
+    "ticker": "2739",
+    "name": "寒舍",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2739_寒舍.md"
+  },
+  {
+    "ticker": "2740",
+    "name": "華軒",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2740_華軒.md"
+  },
+  {
+    "ticker": "2743",
+    "name": "山富",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2743_山富.md"
+  },
+  {
+    "ticker": "2745",
+    "name": "五福",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2745_五福.md"
+  },
+  {
+    "ticker": "2748",
+    "name": "雲品",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2748_雲品.md"
+  },
+  {
+    "ticker": "2751",
+    "name": "王座",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2751_王座.md"
+  },
+  {
+    "ticker": "2752",
+    "name": "豆府",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2752_豆府.md"
+  },
+  {
+    "ticker": "2753",
+    "name": "八方雲集",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2753_八方雲集.md"
+  },
+  {
+    "ticker": "2754",
+    "name": "亞洲藏壽司",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2754_亞洲藏壽司.md"
+  },
+  {
+    "ticker": "2755",
+    "name": "揚秦",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2755_揚秦.md"
+  },
+  {
+    "ticker": "2756",
+    "name": "聯發國際",
+    "path": "Pilot_Reports\\Consumer Defensive\\2756_聯發國際.md"
+  },
+  {
+    "ticker": "2901",
+    "name": "欣欣",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2901_欣欣.md"
+  },
+  {
+    "ticker": "2903",
+    "name": "遠百",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2903_遠百.md"
+  },
+  {
+    "ticker": "2905",
+    "name": "三商",
+    "path": "Pilot_Reports\\Financial Services\\2905_三商.md"
+  },
+  {
+    "ticker": "2906",
+    "name": "高林",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2906_高林.md"
+  },
+  {
+    "ticker": "2908",
+    "name": "特力",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2908_特力.md"
+  },
+  {
+    "ticker": "2910",
+    "name": "統領",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2910_統領.md"
+  },
+  {
+    "ticker": "2911",
+    "name": "麗嬰房",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2911_麗嬰房.md"
+  },
+  {
+    "ticker": "2912",
+    "name": "統一超",
+    "path": "Pilot_Reports\\Consumer Defensive\\2912_統一超.md"
+  },
+  {
+    "ticker": "2913",
+    "name": "農林",
+    "path": "Pilot_Reports\\Consumer Defensive\\2913_農林.md"
+  },
+  {
+    "ticker": "2915",
+    "name": "潤泰全",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2915_潤泰全.md"
+  },
+  {
+    "ticker": "2926",
+    "name": "誠品生活",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2926_誠品生活.md"
+  },
+  {
+    "ticker": "2929",
+    "name": "淘帝-KY",
+    "path": "Pilot_Reports\\Consumer Cyclical\\2929_淘帝-KY.md"
+  },
+  {
+    "ticker": "2939",
+    "name": "永邑-KY",
+    "path": "Pilot_Reports\\Industrials\\2939_永邑-KY.md"
+  },
+  {
+    "ticker": "2945",
+    "name": "三商家購",
+    "path": "Pilot_Reports\\Consumer Defensive\\2945_三商家購.md"
+  },
+  {
+    "ticker": "3054",
+    "name": "立萬利",
+    "path": "Pilot_Reports\\Healthcare\\3054_立萬利.md"
+  },
+  {
+    "ticker": "3064",
+    "name": "泰偉",
+    "path": "Pilot_Reports\\Communication Services\\3064_泰偉.md"
+  },
+  {
+    "ticker": "3083",
+    "name": "網龍",
+    "path": "Pilot_Reports\\Communication Services\\3083_網龍.md"
+  },
+  {
+    "ticker": "3086",
+    "name": "華義",
+    "path": "Pilot_Reports\\Communication Services\\3086_華義.md"
+  },
+  {
+    "ticker": "3118",
+    "name": "進階",
+    "path": "Pilot_Reports\\Healthcare\\3118_進階.md"
+  },
+  {
+    "ticker": "3164",
+    "name": "景岳",
+    "path": "Pilot_Reports\\Healthcare\\3164_景岳.md"
+  },
+  {
+    "ticker": "3176",
+    "name": "基亞",
+    "path": "Pilot_Reports\\Healthcare\\3176_基亞.md"
+  },
+  {
+    "ticker": "3205",
+    "name": "佰研",
+    "path": "Pilot_Reports\\Healthcare\\3205_佰研.md"
+  },
+  {
+    "ticker": "3218",
+    "name": "大學光",
+    "path": "Pilot_Reports\\Healthcare\\3218_大學光.md"
+  },
+  {
+    "ticker": "3252",
+    "name": "海灣",
+    "path": "Pilot_Reports\\Consumer Cyclical\\3252_海灣.md"
+  },
+  {
+    "ticker": "3293",
+    "name": "鈊象",
+    "path": "Pilot_Reports\\Communication Services\\3293_鈊象.md"
+  },
+  {
+    "ticker": "3522",
+    "name": "御嵿",
+    "path": "Pilot_Reports\\Consumer Cyclical\\3522_御嵿.md"
+  },
+  {
+    "ticker": "3546",
+    "name": "宇峻",
+    "path": "Pilot_Reports\\Communication Services\\3546_宇峻.md"
+  },
+  {
+    "ticker": "3629",
+    "name": "地心引力",
+    "path": "Pilot_Reports\\Communication Services\\3629_地心引力.md"
+  },
+  {
+    "ticker": "3705",
+    "name": "永信",
+    "path": "Pilot_Reports\\Healthcare\\3705_永信.md"
+  },
+  {
+    "ticker": "3716",
+    "name": "中化控股",
+    "path": "Pilot_Reports\\Healthcare\\3716_中化控股.md"
+  },
+  {
+    "ticker": "4102",
+    "name": "永日",
+    "path": "Pilot_Reports\\Healthcare\\4102_永日.md"
+  },
+  {
+    "ticker": "4104",
+    "name": "佳醫",
+    "path": "Pilot_Reports\\Healthcare\\4104_佳醫.md"
+  },
+  {
+    "ticker": "4105",
+    "name": "東洋",
+    "path": "Pilot_Reports\\Healthcare\\4105_東洋.md"
+  },
+  {
+    "ticker": "4106",
+    "name": "雃博",
+    "path": "Pilot_Reports\\Healthcare\\4106_雃博.md"
+  },
+  {
+    "ticker": "4107",
+    "name": "邦特",
+    "path": "Pilot_Reports\\Healthcare\\4107_邦特.md"
+  },
+  {
+    "ticker": "4108",
+    "name": "懷特",
+    "path": "Pilot_Reports\\Healthcare\\4108_懷特.md"
+  },
+  {
+    "ticker": "4109",
+    "name": "加捷生醫",
+    "path": "Pilot_Reports\\Consumer Defensive\\4109_加捷生醫.md"
+  },
+  {
+    "ticker": "4111",
+    "name": "濟生",
+    "path": "Pilot_Reports\\Healthcare\\4111_濟生.md"
+  },
+  {
+    "ticker": "4114",
+    "name": "健喬",
+    "path": "Pilot_Reports\\Healthcare\\4114_健喬.md"
+  },
+  {
+    "ticker": "4116",
+    "name": "明基醫",
+    "path": "Pilot_Reports\\Healthcare\\4116_明基醫.md"
+  },
+  {
+    "ticker": "4119",
+    "name": "旭富",
+    "path": "Pilot_Reports\\Healthcare\\4119_旭富.md"
+  },
+  {
+    "ticker": "4120",
+    "name": "友華",
+    "path": "Pilot_Reports\\Healthcare\\4120_友華.md"
+  },
+  {
+    "ticker": "4121",
+    "name": "優盛",
+    "path": "Pilot_Reports\\Healthcare\\4121_優盛.md"
+  },
+  {
+    "ticker": "4123",
+    "name": "晟德",
+    "path": "Pilot_Reports\\Healthcare\\4123_晟德.md"
+  },
+  {
+    "ticker": "4126",
+    "name": "太醫",
+    "path": "Pilot_Reports\\Healthcare\\4126_太醫.md"
+  },
+  {
+    "ticker": "4127",
+    "name": "天良",
+    "path": "Pilot_Reports\\Healthcare\\4127_天良.md"
+  },
+  {
+    "ticker": "4128",
+    "name": "中天",
+    "path": "Pilot_Reports\\Consumer Defensive\\4128_中天.md"
+  },
+  {
+    "ticker": "4129",
+    "name": "聯合",
+    "path": "Pilot_Reports\\Healthcare\\4129_聯合.md"
+  },
+  {
+    "ticker": "4130",
+    "name": "健亞",
+    "path": "Pilot_Reports\\Healthcare\\4130_健亞.md"
+  },
+  {
+    "ticker": "4131",
+    "name": "浩泰",
+    "path": "Pilot_Reports\\Healthcare\\4131_浩泰.md"
+  },
+  {
+    "ticker": "4133",
+    "name": "亞諾法",
+    "path": "Pilot_Reports\\Healthcare\\4133_亞諾法.md"
+  },
+  {
+    "ticker": "4137",
+    "name": "麗豐-KY",
+    "path": "Pilot_Reports\\Consumer Defensive\\4137_麗豐-KY.md"
+  },
+  {
+    "ticker": "4138",
+    "name": "曜亞",
+    "path": "Pilot_Reports\\Healthcare\\4138_曜亞.md"
+  },
+  {
+    "ticker": "4139",
+    "name": "馬光-KY",
+    "path": "Pilot_Reports\\Healthcare\\4139_馬光-KY.md"
+  },
+  {
+    "ticker": "4142",
+    "name": "國光生",
+    "path": "Pilot_Reports\\Healthcare\\4142_國光生.md"
+  },
+  {
+    "ticker": "4147",
+    "name": "中裕",
+    "path": "Pilot_Reports\\Healthcare\\4147_中裕.md"
+  },
+  {
+    "ticker": "4148",
+    "name": "全宇生技-KY",
+    "path": "Pilot_Reports\\Basic Materials\\4148_全宇生技-KY.md"
+  },
+  {
+    "ticker": "4153",
+    "name": "鈺緯",
+    "path": "Pilot_Reports\\Healthcare\\4153_鈺緯.md"
+  },
+  {
+    "ticker": "4155",
+    "name": "訊映",
+    "path": "Pilot_Reports\\Healthcare\\4155_訊映.md"
+  },
+  {
+    "ticker": "4157",
+    "name": "太景-KY",
+    "path": "Pilot_Reports\\Healthcare\\4157_太景-KY.md"
+  },
+  {
+    "ticker": "4160",
+    "name": "訊聯基因",
+    "path": "Pilot_Reports\\Healthcare\\4160_訊聯基因.md"
+  },
+  {
+    "ticker": "4161",
+    "name": "聿新科",
+    "path": "Pilot_Reports\\Healthcare\\4161_聿新科.md"
+  },
+  {
+    "ticker": "4162",
+    "name": "智擎",
+    "path": "Pilot_Reports\\Healthcare\\4162_智擎.md"
+  },
+  {
+    "ticker": "4163",
+    "name": "鐿鈦",
+    "path": "Pilot_Reports\\Industrials\\4163_鐿鈦.md"
+  },
+  {
+    "ticker": "4164",
+    "name": "承業醫",
+    "path": "Pilot_Reports\\Healthcare\\4164_承業醫.md"
+  },
+  {
+    "ticker": "4166",
+    "name": "友霖",
+    "path": "Pilot_Reports\\Healthcare\\4166_友霖.md"
+  },
+  {
+    "ticker": "4167",
+    "name": "松瑞藥",
+    "path": "Pilot_Reports\\Healthcare\\4167_松瑞藥.md"
+  },
+  {
+    "ticker": "4168",
+    "name": "醣聯",
+    "path": "Pilot_Reports\\Healthcare\\4168_醣聯.md"
+  },
+  {
+    "ticker": "4169",
+    "name": "泰宗",
+    "path": "Pilot_Reports\\Healthcare\\4169_泰宗.md"
+  },
+  {
+    "ticker": "4173",
+    "name": "久裕",
+    "path": "Pilot_Reports\\Healthcare\\4173_久裕.md"
+  },
+  {
+    "ticker": "4174",
+    "name": "浩鼎",
+    "path": "Pilot_Reports\\Healthcare\\4174_浩鼎.md"
+  },
+  {
+    "ticker": "4175",
+    "name": "杏一",
+    "path": "Pilot_Reports\\Healthcare\\4175_杏一.md"
+  },
+  {
+    "ticker": "4183",
+    "name": "福永生技",
+    "path": "Pilot_Reports\\Healthcare\\4183_福永生技.md"
+  },
+  {
+    "ticker": "4188",
+    "name": "安克",
+    "path": "Pilot_Reports\\Healthcare\\4188_安克.md"
+  },
+  {
+    "ticker": "4190",
+    "name": "佐登-KY",
+    "path": "Pilot_Reports\\Consumer Defensive\\4190_佐登-KY.md"
+  },
+  {
+    "ticker": "4192",
+    "name": "杏國",
+    "path": "Pilot_Reports\\Healthcare\\4192_杏國.md"
+  },
+  {
+    "ticker": "4198",
+    "name": "欣大健康",
+    "path": "Pilot_Reports\\Healthcare\\4198_欣大健康.md"
+  },
+  {
+    "ticker": "4205",
+    "name": "中華食",
+    "path": "Pilot_Reports\\Consumer Defensive\\4205_中華食.md"
+  },
+  {
+    "ticker": "4207",
+    "name": "環泰",
+    "path": "Pilot_Reports\\Consumer Defensive\\4207_環泰.md"
+  },
+  {
+    "ticker": "4419",
+    "name": "皇家美食",
+    "path": "Pilot_Reports\\Consumer Cyclical\\4419_皇家美食.md"
+  },
+  {
+    "ticker": "4530",
+    "name": "宏易",
+    "path": "Pilot_Reports\\Industrials\\4530_宏易.md"
+  },
+  {
+    "ticker": "4726",
+    "name": "永昕",
+    "path": "Pilot_Reports\\Healthcare\\4726_永昕.md"
+  },
+  {
+    "ticker": "4728",
+    "name": "雙美",
+    "path": "Pilot_Reports\\Healthcare\\4728_雙美.md"
+  },
+  {
+    "ticker": "4735",
+    "name": "豪展",
+    "path": "Pilot_Reports\\Healthcare\\4735_豪展.md"
+  },
+  {
+    "ticker": "4736",
+    "name": "泰博",
+    "path": "Pilot_Reports\\Healthcare\\4736_泰博.md"
+  },
+  {
+    "ticker": "4737",
+    "name": "華廣",
+    "path": "Pilot_Reports\\Healthcare\\4737_華廣.md"
+  },
+  {
+    "ticker": "4743",
+    "name": "合一",
+    "path": "Pilot_Reports\\Healthcare\\4743_合一.md"
+  },
+  {
+    "ticker": "4744",
+    "name": "皇將",
+    "path": "Pilot_Reports\\Industrials\\4744_皇將.md"
+  },
+  {
+    "ticker": "4745",
+    "name": "合富-KY",
+    "path": "Pilot_Reports\\Healthcare\\4745_合富-KY.md"
+  },
+  {
+    "ticker": "4746",
+    "name": "台耀",
+    "path": "Pilot_Reports\\Healthcare\\4746_台耀.md"
+  },
+  {
+    "ticker": "4747",
+    "name": "強生製藥",
+    "path": "Pilot_Reports\\Healthcare\\4747_強生製藥.md"
+  },
+  {
+    "ticker": "4771",
+    "name": "望隼",
+    "path": "Pilot_Reports\\Healthcare\\4771_望隼.md"
+  },
+  {
+    "ticker": "4804",
+    "name": "大略-KY",
+    "path": "Pilot_Reports\\Consumer Cyclical\\4804_大略-KY.md"
+  },
+  {
+    "ticker": "4806",
+    "name": "桂田文創",
+    "path": "Pilot_Reports\\Communication Services\\4806_桂田文創.md"
+  },
+  {
+    "ticker": "4807",
+    "name": "日成-KY",
+    "path": "Pilot_Reports\\Consumer Cyclical\\4807_日成-KY.md"
+  },
+  {
+    "ticker": "4946",
+    "name": "辣椒",
+    "path": "Pilot_Reports\\Communication Services\\4946_辣椒.md"
+  },
+  {
+    "ticker": "5276",
+    "name": "達輝-KY",
+    "path": "Pilot_Reports\\Consumer Cyclical\\5276_達輝-KY.md"
+  },
+  {
+    "ticker": "5301",
+    "name": "寶得利",
+    "path": "Pilot_Reports\\Consumer Cyclical\\5301_寶得利.md"
+  },
+  {
+    "ticker": "5306",
+    "name": "桂盟",
+    "path": "Pilot_Reports\\Consumer Cyclical\\5306_桂盟.md"
+  },
+  {
+    "ticker": "5312",
+    "name": "寶島科",
+    "path": "Pilot_Reports\\Healthcare\\5312_寶島科.md"
+  },
+  {
+    "ticker": "5364",
+    "name": "力麗店",
+    "path": "Pilot_Reports\\Consumer Cyclical\\5364_力麗店.md"
+  },
+  {
+    "ticker": "5548",
+    "name": "安倉",
+    "path": "Pilot_Reports\\Industrials\\5548_安倉.md"
+  },
+  {
+    "ticker": "5701",
+    "name": "劍湖山",
+    "path": "Pilot_Reports\\Consumer Cyclical\\5701_劍湖山.md"
+  },
+  {
+    "ticker": "5703",
+    "name": "亞都麗緻",
+    "path": "Pilot_Reports\\Consumer Cyclical\\5703_亞都麗緻.md"
+  },
+  {
+    "ticker": "5704",
+    "name": "老爺知",
+    "path": "Pilot_Reports\\Consumer Cyclical\\5704_老爺知.md"
+  },
+  {
+    "ticker": "5706",
+    "name": "鳳凰",
+    "path": "Pilot_Reports\\Consumer Cyclical\\5706_鳳凰.md"
+  },
+  {
+    "ticker": "5905",
+    "name": "南仁湖",
+    "path": "Pilot_Reports\\Consumer Cyclical\\5905_南仁湖.md"
+  },
+  {
+    "ticker": "5906",
+    "name": "台南-KY",
+    "path": "Pilot_Reports\\Consumer Cyclical\\5906_台南-KY.md"
+  },
+  {
+    "ticker": "5907",
+    "name": "大洋-KY",
+    "path": "Pilot_Reports\\Consumer Cyclical\\5907_大洋-KY.md"
+  },
+  {
+    "ticker": "6101",
+    "name": "寬魚國際",
+    "path": "Pilot_Reports\\Technology\\6101_寬魚國際.md"
+  },
+  {
+    "ticker": "6111",
+    "name": "光聚晶電",
+    "path": "Pilot_Reports\\Communication Services\\6111_光聚晶電.md"
+  },
+  {
+    "ticker": "6130",
+    "name": "上亞科技",
+    "path": "Pilot_Reports\\Healthcare\\6130_上亞科技.md"
+  },
+  {
+    "ticker": "6144",
+    "name": "得利影",
+    "path": "Pilot_Reports\\Communication Services\\6144_得利影.md"
+  },
+  {
+    "ticker": "6169",
+    "name": "昱泉",
+    "path": "Pilot_Reports\\Communication Services\\6169_昱泉.md"
+  },
+  {
+    "ticker": "6180",
+    "name": "橘子",
+    "path": "Pilot_Reports\\Communication Services\\6180_橘子.md"
+  },
+  {
+    "ticker": "6242",
+    "name": "立康",
+    "path": "Pilot_Reports\\Consumer Cyclical\\6242_立康.md"
+  },
+  {
+    "ticker": "6279",
+    "name": "胡連",
+    "path": "Pilot_Reports\\Consumer Cyclical\\6279_胡連.md"
+  },
+  {
+    "ticker": "6294",
+    "name": "智基",
+    "path": "Pilot_Reports\\Technology\\6294_智基.md"
+  },
+  {
+    "ticker": "6431",
+    "name": "光麗-KY",
+    "path": "Pilot_Reports\\Consumer Defensive\\6431_光麗-KY.md"
+  },
+  {
+    "ticker": "6446",
+    "name": "藥華藥",
+    "path": "Pilot_Reports\\Healthcare\\6446_藥華藥.md"
+  },
+  {
+    "ticker": "6461",
+    "name": "益得",
+    "path": "Pilot_Reports\\Healthcare\\6461_益得.md"
+  },
+  {
+    "ticker": "6469",
+    "name": "大樹",
+    "path": "Pilot_Reports\\Healthcare\\6469_大樹.md"
+  },
+  {
+    "ticker": "6472",
+    "name": "保瑞",
+    "path": "Pilot_Reports\\Healthcare\\6472_保瑞.md"
+  },
+  {
+    "ticker": "6482",
+    "name": "弘煜科",
+    "path": "Pilot_Reports\\Communication Services\\6482_弘煜科.md"
+  },
+  {
+    "ticker": "6491",
+    "name": "晶碩",
+    "path": "Pilot_Reports\\Healthcare\\6491_晶碩.md"
+  },
+  {
+    "ticker": "6492",
+    "name": "生華科",
+    "path": "Pilot_Reports\\Healthcare\\6492_生華科.md"
+  },
+  {
+    "ticker": "6496",
+    "name": "科懋",
+    "path": "Pilot_Reports\\Healthcare\\6496_科懋.md"
+  },
+  {
+    "ticker": "6499",
+    "name": "益安",
+    "path": "Pilot_Reports\\Healthcare\\6499_益安.md"
+  },
+  {
+    "ticker": "6523",
+    "name": "達爾膚",
+    "path": "Pilot_Reports\\Consumer Defensive\\6523_達爾膚.md"
+  },
+  {
+    "ticker": "6527",
+    "name": "明達醫",
+    "path": "Pilot_Reports\\Healthcare\\6527_明達醫.md"
+  },
+  {
+    "ticker": "6534",
+    "name": "正瀚-創",
+    "path": "Pilot_Reports\\Basic Materials\\6534_正瀚-創.md"
+  },
+  {
+    "ticker": "6535",
+    "name": "順藥",
+    "path": "Pilot_Reports\\Healthcare\\6535_順藥.md"
+  },
+  {
+    "ticker": "6541",
+    "name": "泰福-KY",
+    "path": "Pilot_Reports\\Healthcare\\6541_泰福-KY.md"
+  },
+  {
+    "ticker": "6542",
+    "name": "隆中",
+    "path": "Pilot_Reports\\Communication Services\\6542_隆中.md"
+  },
+  {
+    "ticker": "6547",
+    "name": "高端疫苗",
+    "path": "Pilot_Reports\\Healthcare\\6547_高端疫苗.md"
+  },
+  {
+    "ticker": "6550",
+    "name": "北極星藥業-KY",
+    "path": "Pilot_Reports\\Healthcare\\6550_北極星藥業-KY.md"
+  },
+  {
+    "ticker": "6569",
+    "name": "醫揚",
+    "path": "Pilot_Reports\\Healthcare\\6569_醫揚.md"
+  },
+  {
+    "ticker": "6574",
+    "name": "霈方",
+    "path": "Pilot_Reports\\Consumer Defensive\\6574_霈方.md"
+  },
+  {
+    "ticker": "6576",
+    "name": "逸達",
+    "path": "Pilot_Reports\\Healthcare\\6576_逸達.md"
+  },
+  {
+    "ticker": "6589",
+    "name": "台康生技",
+    "path": "Pilot_Reports\\Healthcare\\6589_台康生技.md"
+  },
+  {
+    "ticker": "6596",
+    "name": "寬宏藝術",
+    "path": "Pilot_Reports\\Communication Services\\6596_寬宏藝術.md"
+  },
+  {
+    "ticker": "6598",
+    "name": "ABC-KY",
+    "path": "Pilot_Reports\\Healthcare\\6598_ABC-KY.md"
+  },
+  {
+    "ticker": "6605",
+    "name": "帝寶",
+    "path": "Pilot_Reports\\Consumer Cyclical\\6605_帝寶.md"
+  },
+  {
+    "ticker": "6612",
+    "name": "奈米醫材",
+    "path": "Pilot_Reports\\Healthcare\\6612_奈米醫材.md"
+  },
+  {
+    "ticker": "6615",
+    "name": "慧智",
+    "path": "Pilot_Reports\\Healthcare\\6615_慧智.md"
+  },
+  {
+    "ticker": "6617",
+    "name": "共信-KY",
+    "path": "Pilot_Reports\\Healthcare\\6617_共信-KY.md"
+  },
+  {
+    "ticker": "6620",
+    "name": "漢達",
+    "path": "Pilot_Reports\\Healthcare\\6620_漢達.md"
+  },
+  {
+    "ticker": "6637",
+    "name": "醫影",
+    "path": "Pilot_Reports\\Healthcare\\6637_醫影.md"
+  },
+  {
+    "ticker": "6645",
+    "name": "金萬林-創",
+    "path": "Pilot_Reports\\Healthcare\\6645_金萬林-創.md"
+  },
+  {
+    "ticker": "6649",
+    "name": "台生材",
+    "path": "Pilot_Reports\\Healthcare\\6649_台生材.md"
+  },
+  {
+    "ticker": "6657",
+    "name": "華安",
+    "path": "Pilot_Reports\\Healthcare\\6657_華安.md"
+  },
+  {
+    "ticker": "6661",
+    "name": "威健生技",
+    "path": "Pilot_Reports\\Healthcare\\6661_威健生技.md"
+  },
+  {
+    "ticker": "6662",
+    "name": "樂斯科",
+    "path": "Pilot_Reports\\Healthcare\\6662_樂斯科.md"
+  },
+  {
+    "ticker": "6666",
+    "name": "羅麗芬-KY",
+    "path": "Pilot_Reports\\Consumer Defensive\\6666_羅麗芬-KY.md"
+  },
+  {
+    "ticker": "6703",
+    "name": "軒郁",
+    "path": "Pilot_Reports\\Consumer Defensive\\6703_軒郁.md"
+  },
+  {
+    "ticker": "6712",
+    "name": "長聖",
+    "path": "Pilot_Reports\\Healthcare\\6712_長聖.md"
+  },
+  {
+    "ticker": "6722",
+    "name": "輝創",
+    "path": "Pilot_Reports\\Consumer Cyclical\\6722_輝創.md"
+  },
+  {
+    "ticker": "6730",
+    "name": "常廣",
+    "path": "Pilot_Reports\\Healthcare\\6730_常廣.md"
+  },
+  {
+    "ticker": "6733",
+    "name": "博晟生醫",
+    "path": "Pilot_Reports\\Healthcare\\6733_博晟生醫.md"
+  },
+  {
+    "ticker": "6762",
+    "name": "達亞",
+    "path": "Pilot_Reports\\Healthcare\\6762_達亞.md"
+  },
+  {
+    "ticker": "6767",
+    "name": "台微醫",
+    "path": "Pilot_Reports\\Healthcare\\6767_台微醫.md"
+  },
+  {
+    "ticker": "6782",
+    "name": "視陽",
+    "path": "Pilot_Reports\\Healthcare\\6782_視陽.md"
+  },
+  {
+    "ticker": "6785",
+    "name": "昱展新藥",
+    "path": "Pilot_Reports\\Healthcare\\6785_昱展新藥.md"
+  },
+  {
+    "ticker": "6790",
+    "name": "永豐實",
+    "path": "Pilot_Reports\\Consumer Defensive\\6790_永豐實.md"
+  },
+  {
+    "ticker": "6794",
+    "name": "向榮生技",
+    "path": "Pilot_Reports\\Healthcare\\6794_向榮生技.md"
+  },
+  {
+    "ticker": "6796",
+    "name": "晉弘",
+    "path": "Pilot_Reports\\Healthcare\\6796_晉弘.md"
+  },
+  {
+    "ticker": "6838",
+    "name": "台新藥",
+    "path": "Pilot_Reports\\Healthcare\\6838_台新藥.md"
+  },
+  {
+    "ticker": "6841",
+    "name": "長佳智能",
+    "path": "Pilot_Reports\\Healthcare\\6841_長佳智能.md"
+  },
+  {
+    "ticker": "6843",
+    "name": "進典",
+    "path": "Pilot_Reports\\NA\\6843_進典.md"
+  },
+  {
+    "ticker": "6844",
+    "name": "諾貝兒",
+    "path": "Pilot_Reports\\Consumer Cyclical\\6844_諾貝兒.md"
+  },
+  {
+    "ticker": "6846",
+    "name": "綠茵",
+    "path": "Pilot_Reports\\Healthcare\\6846_綠茵.md"
+  },
+  {
+    "ticker": "6856",
+    "name": "鑫傳",
+    "path": "Pilot_Reports\\Communication Services\\6856_鑫傳.md"
+  },
+  {
+    "ticker": "6861",
+    "name": "睿生光電",
+    "path": "Pilot_Reports\\Healthcare\\6861_睿生光電.md"
+  },
+  {
+    "ticker": "6865",
+    "name": "偉康科技",
+    "path": "Pilot_Reports\\Technology\\6865_偉康科技.md"
+  },
+  {
+    "ticker": "6872",
+    "name": "浩宇生醫",
+    "path": "Pilot_Reports\\Healthcare\\6872_浩宇生醫.md"
+  },
+  {
+    "ticker": "6875",
+    "name": "國邑",
+    "path": "Pilot_Reports\\Healthcare\\6875_國邑.md"
+  },
+  {
+    "ticker": "6885",
+    "name": "全福生技",
+    "path": "Pilot_Reports\\Healthcare\\6885_全福生技.md"
+  },
+  {
+    "ticker": "6907",
+    "name": "雅特力-KY",
+    "path": "Pilot_Reports\\Unknown\\6907_雅特力-KY.md"
+  },
+  {
+    "ticker": "6910",
+    "name": "德鴻",
+    "path": "Pilot_Reports\\Technology\\6910_德鴻.md"
+  },
+  {
+    "ticker": "6913",
+    "name": "鴻呈",
+    "path": "Pilot_Reports\\Unknown\\6913_鴻呈.md"
+  },
+  {
+    "ticker": "6918",
+    "name": "愛派司",
+    "path": "Pilot_Reports\\Healthcare\\6918_愛派司.md"
+  },
+  {
+    "ticker": "6919",
+    "name": "康霈",
+    "path": "Pilot_Reports\\Healthcare\\6919_康霈.md"
+  },
+  {
+    "ticker": "6929",
+    "name": "佑全",
+    "path": "Pilot_Reports\\Consumer Defensive\\6929_佑全.md"
+  },
+  {
+    "ticker": "6931",
+    "name": "青松健康",
+    "path": "Pilot_Reports\\Healthcare\\6931_青松健康.md"
+  },
+  {
+    "ticker": "6934",
+    "name": "心誠鎂",
+    "path": "Pilot_Reports\\Healthcare\\6934_心誠鎂.md"
+  },
+  {
+    "ticker": "6936",
+    "name": "永鴻生技",
+    "path": "Pilot_Reports\\Consumer Defensive\\6936_永鴻生技.md"
+  },
+  {
+    "ticker": "6949",
+    "name": "沛爾生醫-創",
+    "path": "Pilot_Reports\\Healthcare\\6949_沛爾生醫-創.md"
+  },
+  {
+    "ticker": "6955",
+    "name": "邦睿生技-創",
+    "path": "Pilot_Reports\\Healthcare\\6955_邦睿生技-創.md"
+  },
+  {
+    "ticker": "6961",
+    "name": "旅天下",
+    "path": "Pilot_Reports\\Consumer Cyclical\\6961_旅天下.md"
+  },
+  {
+    "ticker": "6967",
+    "name": "汎瑋材料",
+    "path": "Pilot_Reports\\Basic Materials\\6967_汎瑋材料.md"
+  },
+  {
+    "ticker": "6971",
+    "name": "惠民實業",
+    "path": "Pilot_Reports\\NA\\6971_惠民實業.md"
+  },
+  {
+    "ticker": "6996",
+    "name": "力領科技",
+    "path": "Pilot_Reports\\Technology\\6996_力領科技.md"
+  },
+  {
+    "ticker": "7584",
+    "name": "樂意",
+    "path": "Pilot_Reports\\Communication Services\\7584_樂意.md"
+  },
+  {
+    "ticker": "7631",
+    "name": "聚賢研發-創",
+    "path": "Pilot_Reports\\Industrials\\7631_聚賢研發-創.md"
+  },
+  {
+    "ticker": "7642",
+    "name": "昶瑞機電",
+    "path": "Pilot_Reports\\NA\\7642_昶瑞機電.md"
+  },
+  {
+    "ticker": "7703",
+    "name": "銳澤",
+    "path": "Pilot_Reports\\Industrials\\7703_銳澤.md"
+  },
+  {
+    "ticker": "7705",
+    "name": "三商餐飲",
+    "path": "Pilot_Reports\\Consumer Cyclical\\7705_三商餐飲.md"
+  },
+  {
+    "ticker": "7708",
+    "name": "全家餐飲",
+    "path": "Pilot_Reports\\Consumer Cyclical\\7708_全家餐飲.md"
+  },
+  {
+    "ticker": "7709",
+    "name": "榮田",
+    "path": "Pilot_Reports\\Industrials\\7709_榮田.md"
+  },
+  {
+    "ticker": "7712",
+    "name": "博盛半導體",
+    "path": "Pilot_Reports\\Technology\\7712_博盛半導體.md"
+  },
+  {
+    "ticker": "7713",
+    "name": "威力德生醫",
+    "path": "Pilot_Reports\\Healthcare\\7713_威力德生醫.md"
+  },
+  {
+    "ticker": "7714",
+    "name": "創泓科技",
+    "path": "Pilot_Reports\\Technology\\7714_創泓科技.md"
+  },
+  {
+    "ticker": "7715",
+    "name": "裕山",
+    "path": "Pilot_Reports\\Industrials\\7715_裕山.md"
+  },
+  {
+    "ticker": "7716",
+    "name": "昱臺國際",
+    "path": "Pilot_Reports\\Industrials\\7716_昱臺國際.md"
+  },
+  {
+    "ticker": "7717",
+    "name": "萊德光電-KY",
+    "path": "Pilot_Reports\\Technology\\7717_萊德光電-KY.md"
+  },
+  {
+    "ticker": "7718",
+    "name": "友鋮",
+    "path": "Pilot_Reports\\Industrials\\7718_友鋮.md"
+  },
+  {
+    "ticker": "7723",
+    "name": "築間",
+    "path": "Pilot_Reports\\Consumer Cyclical\\7723_築間.md"
+  },
+  {
+    "ticker": "7732",
+    "name": "金興精密",
+    "path": "Pilot_Reports\\Industrials\\7732_金興精密.md"
+  },
+  {
+    "ticker": "7734",
+    "name": "印能科技",
+    "path": "Pilot_Reports\\Consumer Cyclical\\7734_印能科技.md"
+  },
+  {
+    "ticker": "7736",
+    "name": "虎山",
+    "path": "Pilot_Reports\\Consumer Cyclical\\7736_虎山.md"
+  },
+  {
+    "ticker": "7738",
+    "name": "東聯互動",
+    "path": "Pilot_Reports\\Financial Services\\7738_東聯互動.md"
+  },
+  {
+    "ticker": "7743",
+    "name": "金利食安",
+    "path": "Pilot_Reports\\Industrials\\7743_金利食安.md"
+  },
+  {
+    "ticker": "7744",
+    "name": "崴寶",
+    "path": "Pilot_Reports\\Industrials\\7744_崴寶.md"
+  },
+  {
+    "ticker": "7747",
+    "name": "昕奇雲端",
+    "path": "Pilot_Reports\\Technology\\7747_昕奇雲端.md"
+  },
+  {
+    "ticker": "7751",
+    "name": "竑騰",
+    "path": "Pilot_Reports\\Technology\\7751_竑騰.md"
+  },
+  {
+    "ticker": "7753",
+    "name": "星亞",
+    "path": "Pilot_Reports\\Technology\\7753_星亞.md"
+  },
+  {
+    "ticker": "7757",
+    "name": "金色三麥",
+    "path": "Pilot_Reports\\Consumer Cyclical\\7757_金色三麥.md"
+  },
+  {
+    "ticker": "7767",
+    "name": "仁大資訊",
+    "path": "Pilot_Reports\\Technology\\7767_仁大資訊.md"
+  },
+  {
+    "ticker": "7770",
+    "name": "君曜",
+    "path": "Pilot_Reports\\Technology\\7770_君曜.md"
+  },
+  {
+    "ticker": "7777",
+    "name": "能率亞洲",
+    "path": "Pilot_Reports\\Financial Services\\7777_能率亞洲.md"
+  },
+  {
+    "ticker": "7780",
+    "name": "大研生醫",
+    "path": "Pilot_Reports\\Consumer Defensive\\7780_大研生醫.md"
+  },
+  {
+    "ticker": "7782",
+    "name": "光速火箭",
+    "path": "Pilot_Reports\\Industrials\\7782_光速火箭.md"
+  },
+  {
+    "ticker": "7791",
+    "name": "皇家可口",
+    "path": "Pilot_Reports\\Consumer Defensive\\7791_皇家可口.md"
+  },
+  {
+    "ticker": "7792",
+    "name": "安葆",
+    "path": "Pilot_Reports\\Industrials\\7792_安葆.md"
+  },
+  {
+    "ticker": "7799",
+    "name": "禾榮科",
+    "path": "Pilot_Reports\\Healthcare\\7799_禾榮科.md"
+  },
+  {
+    "ticker": "7805",
+    "name": "威聯通",
+    "path": "Pilot_Reports\\Technology\\7805_威聯通.md"
+  },
+  {
+    "ticker": "7810",
+    "name": "捷創科技",
+    "path": "Pilot_Reports\\Technology\\7810_捷創科技.md"
+  },
+  {
+    "ticker": "7811",
+    "name": "民盛",
+    "path": "Pilot_Reports\\Consumer Cyclical\\7811_民盛.md"
+  },
+  {
+    "ticker": "7822",
+    "name": "倍利科",
+    "path": "Pilot_Reports\\Technology\\7822_倍利科.md"
+  },
+  {
+    "ticker": "8077",
+    "name": "洛碁",
+    "path": "Pilot_Reports\\Consumer Cyclical\\8077_洛碁.md"
+  },
+  {
+    "ticker": "8083",
+    "name": "瑞穎",
+    "path": "Pilot_Reports\\Consumer Cyclical\\8083_瑞穎.md"
+  },
+  {
+    "ticker": "8107",
+    "name": "大億金茂",
+    "path": "Pilot_Reports\\Consumer Cyclical\\8107_大億金茂.md"
+  },
+  {
+    "ticker": "8255",
+    "name": "朋程",
+    "path": "Pilot_Reports\\Consumer Cyclical\\8255_朋程.md"
+  },
+  {
+    "ticker": "8272",
+    "name": "全景軟體",
+    "path": "Pilot_Reports\\Technology\\8272_全景軟體.md"
+  },
+  {
+    "ticker": "8279",
+    "name": "生展",
+    "path": "Pilot_Reports\\Healthcare\\8279_生展.md"
+  },
+  {
+    "ticker": "8403",
+    "name": "盛弘",
+    "path": "Pilot_Reports\\Healthcare\\8403_盛弘.md"
+  },
+  {
+    "ticker": "8409",
+    "name": "商之器",
+    "path": "Pilot_Reports\\Healthcare\\8409_商之器.md"
+  },
+  {
+    "ticker": "8423",
+    "name": "保綠-KY",
+    "path": "Pilot_Reports\\Consumer Cyclical\\8423_保綠-KY.md"
+  },
+  {
+    "ticker": "8429",
+    "name": "金麗-KY",
+    "path": "Pilot_Reports\\Consumer Cyclical\\8429_金麗-KY.md"
+  },
+  {
+    "ticker": "8432",
+    "name": "東生華",
+    "path": "Pilot_Reports\\Healthcare\\8432_東生華.md"
+  },
+  {
+    "ticker": "8436",
+    "name": "大江",
+    "path": "Pilot_Reports\\Consumer Defensive\\8436_大江.md"
+  },
+  {
+    "ticker": "8443",
+    "name": "阿瘦",
+    "path": "Pilot_Reports\\Consumer Cyclical\\8443_阿瘦.md"
+  },
+  {
+    "ticker": "8446",
+    "name": "華研",
+    "path": "Pilot_Reports\\Communication Services\\8446_華研.md"
+  },
+  {
+    "ticker": "8450",
+    "name": "霹靂",
+    "path": "Pilot_Reports\\Communication Services\\8450_霹靂.md"
+  },
+  {
+    "ticker": "8923",
+    "name": "時報",
+    "path": "Pilot_Reports\\Communication Services\\8923_時報.md"
+  },
+  {
+    "ticker": "8940",
+    "name": "新天地",
+    "path": "Pilot_Reports\\Consumer Cyclical\\8940_新天地.md"
+  },
+  {
+    "ticker": "9103",
+    "name": "美德醫療-DR",
+    "path": "Pilot_Reports\\Healthcare\\9103_美德醫療-DR.md"
+  },
+  {
+    "ticker": "9105",
+    "name": "泰金寶-DR",
+    "path": "Pilot_Reports\\Technology\\9105_泰金寶-DR.md"
+  },
+  {
+    "ticker": "9110",
+    "name": "越南控-DR",
+    "path": "Pilot_Reports\\Consumer Cyclical\\9110_越南控-DR.md"
+  },
+  {
+    "ticker": "9136",
+    "name": "巨騰-DR",
+    "path": "Pilot_Reports\\Technology\\9136_巨騰-DR.md"
+  },
+  {
+    "ticker": "9942",
+    "name": "茂順",
+    "path": "Pilot_Reports\\Consumer Cyclical\\9942_茂順.md"
+  },
+  {
+    "ticker": "9943",
+    "name": "好樂迪",
+    "path": "Pilot_Reports\\Consumer Cyclical\\9943_好樂迪.md"
+  },
+  {
+    "ticker": "9949",
+    "name": "琉園",
+    "path": "Pilot_Reports\\Consumer Defensive\\9949_琉園.md"
+  },
+  {
+    "ticker": "9951",
+    "name": "皇田",
+    "path": "Pilot_Reports\\Consumer Cyclical\\9951_皇田.md"
+  }
+]

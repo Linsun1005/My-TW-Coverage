@@ -262,7 +262,10 @@ def fetch_valuation_data(info):
         ("enterpriseToEbitda", "EV/EBITDA"),
     ]:
         val = info.get(key)
-        valuation[label] = f"{val:.2f}" if val else "N/A"
+        try:
+            valuation[label] = f"{float(val):.2f}" if val is not None else "N/A"
+        except (TypeError, ValueError):
+            valuation[label] = "N/A"
 
     # Price
     cur_price = info.get("currentPrice")

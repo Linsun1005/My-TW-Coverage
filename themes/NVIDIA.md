@@ -2,13 +2,13 @@
 
 > NVIDIA GPU 及 AI 平台台灣供應鏈
 
-**涵蓋公司數:** 104
+**涵蓋公司數:** 109
 
-**相關主題:** [[CoWoS]] (39) | [[HBM]] (16) | [[AI 伺服器]] (148) | [[台積電]] (182)
+**相關主題:** [[CoWoS]] (41) | [[HBM]] (17) | [[AI 伺服器]] (154) | [[台積電]] (190)
 
 ---
 
-## 上游 (42)
+## 上游 (44)
 
 - **2345 智邦** (Communication Equipment)
 - **6245 立端** (Communication Equipment)
@@ -48,12 +48,14 @@
 - **3709 鑫聯大投控** (Electronics & Computer Distribution)
 - **6227 茂綸** (Electronics & Computer Distribution)
 - **4550 長佳** (Engineering & Construction)
+- **6637 醫影** (Healthcare)
+- **6841 長佳智能** (Healthcare)
 - **5484 慧友** (Security & Protection Services)
 - **6231 系微** (Software - Application)
 - **6882 甲尚** (Software - Application)
 - **3045 台灣大** (Specialty Retail)
 
-## 下游 (16)
+## 下游 (17)
 
 - **3163 波若威** (Communication Equipment)
 - **3324 雙鴻** (Computer Hardware)
@@ -64,6 +66,7 @@
 - **6862 三集瑞-KY** (Electronic Components)
 - **7861 貝爾威勒** (Electronic Components)
 - **8046 南電** (Electronic Components)
+- **2059 川湖** (Furnishings, Fixtures & Appliances)
 - **2360 致茂** (Scientific & Technical Instruments)
 - **3587 閎康** (Scientific & Technical Instruments)
 - **4549 桓達** (Scientific & Technical Instruments)
@@ -72,7 +75,7 @@
 - **7749 意騰-KY** (Software - Infrastructure)
 - **5607 遠雄港** (Specialty Business Services)
 
-## 相關公司 (46)
+## 相關公司 (48)
 
 - **2256 歐特明** (Auto Parts)
 - **6134 萬旭** (Communication Equipment)
@@ -91,6 +94,7 @@
 - **6781 AES-KY** (Electrical Equipment & Parts)
 - **2383 台光電** (Electronic Components)
 - **3017 奇鋐** (Electronic Components)
+- **3042 晶技** (Electronic Components)
 - **3338 泰碩** (Electronic Components)
 - **3533 嘉澤** (Electronic Components)
 - **3605 宏致** (Electronic Components)
@@ -109,14 +113,15 @@
 - **6123 上奇** (Electronics & Computer Distribution)
 - **6189 豐藝** (Electronics & Computer Distribution)
 - **6776 展�眥篕�** (Electronics & Computer Distribution)
-- **2059 川湖** (Furnishings, Fixtures & Appliances)
 - **6584 南俊國際** (Furnishings, Fixtures & Appliances)
 - **6223 旺矽** (Semiconductor Equipment & Materials)
 - **2330 台積電** (Semiconductors)
+- **3105 穩懋** (Semiconductors)
 - **5203 訊連** (Software - Application)
 - **7547 碩網** (Software - Infrastructure)
 - **1303 南亞** (Specialty Chemicals)
 - **3167 大量** (Specialty Industrial Machinery)
 - **6125 廣運** (Specialty Industrial Machinery)
+- **7822 倍利科** (Technology)
 - **6561 是方** (Telecom Services)
 - **5475 德宏** (Textile Manufacturing)

@@ -2,13 +2,13 @@
 
 > 特斯拉電動車台灣供應鏈成員
 
-**涵蓋公司數:** 47
+**涵蓋公司數:** 48
 
-**相關主題:** [[電動車]] (129) | [[碳化矽]] (22)
+**相關主題:** [[電動車]] (136) | [[碳化矽]] (23)
 
 ---
 
-## 上游 (8)
+## 上游 (7)
 
 - **4915 致伸** (Consumer Electronics)
 - **3290 東浦** (Electrical Equipment & Parts)
@@ -17,9 +17,8 @@
 - **5243 乙盛-KY** (Electronic Components)
 - **5457 宣德** (Electronic Components)
 - **1586 和勤** (Metal Fabrication)
-- **4739 康普** (Specialty Chemicals)
 
-## 下游 (22)
+## 下游 (24)
 
 - **1536 和大** (Auto Parts)
 - **2101 南港** (Auto Parts)
@@ -40,8 +39,10 @@
 - **3030 德律** (Scientific & Technical Instruments)
 - **5309 系統電** (Scientific & Technical Instruments)
 - **6443 元晶** (Solar)
+- **4739 康普** (Specialty Chemicals)
 - **4590 富田-創** (Specialty Industrial Machinery)
 - **6603 富強鑫** (Specialty Industrial Machinery)
+- **6996 力領科技** (Technology)
 - **2066 世德** (Tools & Accessories)
 
 ## 相關公司 (17)

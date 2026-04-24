@@ -2,9 +2,9 @@
 
 > 台積電 Chip-on-Wafer-on-Substrate 2.5D 先進封裝技術，AI 晶片關鍵製程
 
-**涵蓋公司數:** 39
+**涵蓋公司數:** 41
 
-**相關主題:** [[HBM]] (16) | [[2.5D 封裝]] (3) | [[3D 封裝]] (3) | [[ABF 載板]] (14)
+**相關主題:** [[HBM]] (17) | [[2.5D 封裝]] (4) | [[3D 封裝]] (4) | [[ABF 載板]] (14)
 
 ---
 
@@ -16,13 +16,14 @@
 - **6664 群翊** (Specialty Industrial Machinery)
 - **6706 惠特** (Specialty Industrial Machinery)
 
-## 中游 (3)
+## 中游 (4)
 
 - **3535 晶彩科** (Computer Hardware)
 - **6742 澤米** (Electronic Components)
 - **1717 長興** (Specialty Chemicals)
+- **5234 達興材料** (Specialty Chemicals)
 
-## 下游 (11)
+## 下游 (12)
 
 - **1721 三晃** (Chemicals)
 - **3577 泓格** (Communication Equipment)
@@ -35,6 +36,7 @@
 - **6903 巨漢** (Engineering & Construction)
 - **3131 弘塑** (Semiconductor Equipment & Materials)
 - **4755 三福化** (Specialty Chemicals)
+- **7822 倍利科** (Technology)
 
 ## 相關公司 (20)
 
@@ -54,7 +56,7 @@
 - **6515 穎崴** (Semiconductors)
 - **6531 愛普** (Semiconductors)
 - **8227 巨有科技** (Semiconductors)
-- **5234 達興材料** (Specialty Chemicals)
 - **2464 盟立** (Specialty Industrial Machinery)
 - **3485 敘豐** (Specialty Industrial Machinery)
 - **6187 萬潤** (Specialty Industrial Machinery)
+- **7751 竑騰** (Technology)
